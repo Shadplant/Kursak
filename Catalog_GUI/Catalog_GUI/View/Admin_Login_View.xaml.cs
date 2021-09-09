@@ -19,10 +19,21 @@ namespace WpfApp1
     /// </summary>
     public partial class Admin_Login_View : Window
     {
+        Admin_Login_ViewModel model;
         public Admin_Login_View()
         {
             InitializeComponent();
-            DataContext = new Admin_Login_ViewModel();
+            DataContext = model =  new Admin_Login_ViewModel();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            if (model.Login_Admin_ViewModel())
+            {
+
+                new Game_Add_View().Show();
+                this.Close();
+            }
         }
     }
 }

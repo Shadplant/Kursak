@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.Linq;
 using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 
 namespace WpfApp1
@@ -57,19 +53,16 @@ namespace WpfApp1
             }
         }
 
-        public void Login_Admin_ViewModel()
+        public bool Login_Admin_ViewModel()
         {
-            try
+            bool isAutorize = false;
+
+            if (Check_Email_ViewModel())
             {
-                if (Check_Email_ViewModel())
-                {
-                    MessageBox.Show(model.Login_Admin_Model(Email.ToLower(), Password));
-                }
+                isAutorize = true;
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
+
+            return isAutorize;
         }
 
         public event PropertyChangedEventHandler PropertyChanged;
