@@ -15,12 +15,12 @@ namespace DataBase_Service
 
         public bool Check_Email(string Email)
         {
-           return new Admin_Reposetory().Check_Email(Email);
+            return new Admin_Reposetory().Check_Email(Email);
         }
 
         public string Login_Admin(string Email, string Password)
         {
-            throw new NotImplementedException();
+            return new Admin_Reposetory().Login_Admin(Email, Password);
         }
     }
 }
