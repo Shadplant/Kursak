@@ -15,7 +15,7 @@ namespace WpfApp1
         private string name;
         private string description;
         private string image_link;
-        private int admin_ID;
+        private int admin_ID = 1;
 
         public string Name
         {
