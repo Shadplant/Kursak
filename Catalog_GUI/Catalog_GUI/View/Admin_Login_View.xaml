@@ -26,6 +26,7 @@
             Content="Login" 
             Margin="45,227,45,33" 
             Height="Auto"
+            Click="Button_Click"
             Command="{Binding Login_Command}"/>
 
         <!--Login box-->
