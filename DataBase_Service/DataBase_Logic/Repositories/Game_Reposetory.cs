@@ -9,7 +9,7 @@ namespace DataBase_Logic
         {
             using (SqlConnection conn = new SqlConnection(DatabaseConnectionSingleton.getInstance().getConnectionString()))
             {
-                conn.Execute("EXEC Add_Game \'"+Game_Name+"\', \'"+Game_Description+"\', \'"+Game_Image_Link+"\', 1");
+                conn.Execute("EXEC Add_Game \'"+Game_Name+"\', \'"+Game_Description+"\', \'"+Game_Image_Link+"\', " + Publishing_Admin_ID.ToString() );
             }
         }
     }

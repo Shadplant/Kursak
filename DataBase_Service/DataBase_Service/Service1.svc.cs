@@ -9,18 +9,18 @@ namespace DataBase_Service
         DatabaseConnectionSingleton db = DatabaseConnectionSingleton.getInstance("Data Source=SQL5108.site4now.net;Initial Catalog=db_a7985d_clientdatabase;User Id=db_a7985d_clientdatabase_admin;Password=JoeSon12345678");
         public void Add_Game(string Game_Name, string Game_Description, string Game_Image_Link, int Publishing_Admin_ID)
         {
-           
+            new Game_Reposetory().Add_Game(Game_Name, Game_Image_Link, Game_Image_Link, Publishing_Admin_ID);
 
         }
 
         public bool Check_Email(string Email)
         {
-           return new Admin_Reposetory().Check_Email(Email);
+            return new Admin_Reposetory().Check_Email(Email);
         }
 
         public string Login_Admin(string Email, string Password)
         {
-            throw new NotImplementedException();
+            return new Admin_Reposetory().Login_Admin(Email, Password);
         }
     }
 }
