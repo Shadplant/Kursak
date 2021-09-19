@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace WpfApp1
+namespace Catalog_GUI
 {
     public class Game_Add_ViewModel : INotifyPropertyChanged
     {
