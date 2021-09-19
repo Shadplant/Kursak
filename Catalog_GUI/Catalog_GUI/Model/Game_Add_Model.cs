@@ -1,8 +1,7 @@
-﻿using Catalog_GUI.Model;
-using System.ComponentModel;
+﻿using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
-namespace WpfApp1
+namespace Catalog_GUI
 {
     public class Game_Add_Model : INotifyPropertyChanged
     {

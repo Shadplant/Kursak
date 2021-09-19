@@ -3,7 +3,7 @@ using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Windows;
 
-namespace WpfApp1
+namespace Catalog_GUI
 {
     public class Admin_Login_ViewModel : INotifyPropertyChanged
     {
