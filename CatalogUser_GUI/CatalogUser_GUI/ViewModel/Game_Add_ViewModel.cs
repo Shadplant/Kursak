@@ -7,9 +7,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace Catalog_GUI
+namespace CatalogUser_GUI
 {
-    public class Game_Add_ViewModel : Base_Model
+    public class Game_Add_ViewModel : INotifyPropertyChanged
     {
         Game_Add_Model model = new Game_Add_Model();
         private string name;
@@ -77,6 +77,13 @@ namespace Catalog_GUI
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        public event PropertyChangedEventHandler PropertyChanged;
+        public void OnPropertyChanged([CallerMemberName] string prop = "")
+        {
+            if (PropertyChanged != null)
+                PropertyChanged(this, new PropertyChangedEventArgs(prop));
         }
     }
 }

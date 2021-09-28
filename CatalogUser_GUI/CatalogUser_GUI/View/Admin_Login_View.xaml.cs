@@ -12,7 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace Catalog_GUI
+namespace CatalogUser_GUI
 {
     /// <summary>
     /// Interaction logic for Admin_Login_View.xaml

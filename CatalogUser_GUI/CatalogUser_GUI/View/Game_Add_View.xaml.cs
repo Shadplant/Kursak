@@ -16,13 +16,19 @@ using System.Windows.Shapes;
 namespace CatalogUser_GUI
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for Game_Add_View.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Game_Add_View : Window
     {
-        public MainWindow()
+        public Game_Add_View()
         {
             InitializeComponent();
+            DataContext = new Game_Add_ViewModel();
+        }
+
+        private void Cancel_Button_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
     }
 }

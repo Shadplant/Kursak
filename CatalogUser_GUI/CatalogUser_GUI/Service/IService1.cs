@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using DataBase_Service;
 
-namespace Catalog_GUI
+namespace CatalogUser_GUI
 {
     [ServiceContract]
     public interface IService1
@@ -18,12 +18,6 @@ namespace Catalog_GUI
         string Login_Admin(string Email, string Password);
 
         [OperationContract]
-        void Refer_Admin(string Email, string Password);
-
-        [OperationContract]
         bool Check_Email(string Email);
-
-        [OperationContract]
-        bool Add_Admin(string Email, string Password);
     }
 }

@@ -1,13 +1,13 @@
 ﻿using System;
-using System.ComponentModel;
-using System.Runtime.CompilerServices;
+using System.Collections.Generic;
+using System.Text;
 using System.Windows;
 
 namespace Catalog_GUI
 {
-    public class Admin_Login_ViewModel : Base_Model
+    public class Admin_Refer_ViewModel : Base_Model
     {
-        Admin_Login_Model model = new Admin_Login_Model();
+        Admin_Refer_Model model = new Admin_Refer_Model();
         private string email;
         private string password;
 
@@ -31,12 +31,12 @@ namespace Catalog_GUI
             }
         }
 
-        private RelayCommand login_command;
-        public RelayCommand Login_Command
+        private RelayCommand refer_command;
+        public RelayCommand Refer_Command
         {
             get
             {
-                return login_command ?? (login_command = new RelayCommand(obj => Login_Admin_ViewModel()));
+                return refer_command ?? (refer_command = new RelayCommand(obj => Refer_Admin_ViewModel()));
             }
         }
 
@@ -53,16 +53,16 @@ namespace Catalog_GUI
             }
         }
 
-        public bool Login_Admin_ViewModel()
+        public bool Refer_Admin_ViewModel()
         {
-            bool isAutorize = false;
+            bool exists = false;
 
             if (Check_Email_ViewModel())
             {
-                isAutorize = true;
+                exists = true;
             }
 
-            return isAutorize;
+            return exists;
         }
     }
 }
