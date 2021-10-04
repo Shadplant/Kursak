@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Windows.Input;
 
-namespace Catalog_GUI
+namespace Catalog_Admin_GUI
 {
     public class RelayCommand : ICommand
     {

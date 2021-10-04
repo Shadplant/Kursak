@@ -3,7 +3,7 @@ using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Windows;
 
-namespace Catalog_GUI
+namespace Catalog_Admin_GUI
 {
     public class Admin_Login_ViewModel : Base_Model
     {

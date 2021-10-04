@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using DataBase_Service;
 
-namespace Catalog_GUI
+namespace Catalog_Admin_GUI
 {
     [ServiceContract]
     public interface IService1

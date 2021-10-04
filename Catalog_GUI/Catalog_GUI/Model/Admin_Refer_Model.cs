@@ -4,7 +4,7 @@ using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Text;
 
-namespace Catalog_GUI
+namespace Catalog_Admin_GUI
 {
     public class Admin_Refer_Model : Base_Model
     {

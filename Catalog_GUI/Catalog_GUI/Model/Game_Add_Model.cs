@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
-namespace Catalog_GUI
+namespace Catalog_Admin_GUI
 {
     public class Game_Add_Model : Base_Model
     {

@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -16,19 +14,13 @@ using System.Windows.Shapes;
 namespace Catalog_Admin_GUI
 {
     /// <summary>
-    /// Interaction logic for Game_Add_View.xaml
+    /// Interaction logic for Admin_Gamelist_Control.xaml
     /// </summary>
-    public partial class Game_Add_View : Window
+    public partial class Admin_Gamelist_Control : UserControl
     {
-        public Game_Add_View()
+        public Admin_Gamelist_Control()
         {
             InitializeComponent();
-            DataContext = new Game_Add_ViewModel();
-        }
-
-        private void Cancel_Button_Click(object sender, RoutedEventArgs e)
-        {
-            this.Close();
         }
     }
 }

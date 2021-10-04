@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace Catalog_GUI
+namespace Catalog_Admin_GUI
 {
     public class Game_Add_ViewModel : Base_Model
     {

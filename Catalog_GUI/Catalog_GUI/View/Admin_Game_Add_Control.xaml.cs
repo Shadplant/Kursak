@@ -8,16 +8,17 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Catalog_GUI.View
+namespace Catalog_Admin_GUI
 {
     /// <summary>
-    /// Interaction logic for Admin_Refer_View.xaml
+    /// Interaction logic for Admin_Add_Control.xaml
     /// </summary>
-    public partial class Admin_Refer_View : Window
+    public partial class Admin_Game_Add_Control : UserControl
     {
-        public Admin_Refer_View()
+        public Admin_Add_Control()
         {
             InitializeComponent();
         }

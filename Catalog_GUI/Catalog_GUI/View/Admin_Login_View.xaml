@@ -1,19 +1,19 @@
-﻿<Window x:Class="Catalog_GUI.Admin_Login_View"
+﻿<Window x:Class="Catalog_Admin_GUI.Admin_Login_View"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Catalog_GUI"
+        xmlns:local="clr-namespace:Catalog_Admin_GUI"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d"
         Title="Admin_Login_View" Height="450" Width="800"
-        TextElement.Foreground="White"
+        TextElement.Foreground="Black"
         TextElement.FontWeight="Regular"
         TextElement.FontSize="13"
         TextOptions.TextFormattingMode="Ideal"
         TextOptions.TextRenderingMode="Auto"
-        Background="{DynamicResource MaterialDesignDarkBackground}"
-        FontFamily="{DynamicResource MaterialDesignFont}">
+        Background="LightGray"
+        FontFamily="{DynamicResource MaterialDesignFont}" WindowStyle="None" ResizeMode="NoResize">
     <Grid>
 
         <!--Login Button-->
@@ -24,21 +24,15 @@
             MaxHeight="50"
             FontSize="16"
             Content="Login" 
+            Foreground="Black"
             Margin="45,227,45,33" 
             Height="Auto"
-            Click="Button_Click"
+            Click="Login_Button_Click"
             Command="{Binding Login_Command}"/>
 
         <!--Login box-->
         <Grid MaxHeight="50" Margin="45,-11,45,54">
-            <TextBox 
-                    Style="{StaticResource MaterialDesignOutlinedTextBox}" 
-                    materialDesign:HintAssist.Hint="Email" 
-                    x:Name="Login_Box"
-                    VerticalAlignment="Bottom"
-                    Text="{Binding Email}"
-                    Height="50">
-            </TextBox>
+            <TextBox Style="{StaticResource MaterialDesignOutlinedTextBox}" materialDesign:HintAssist.Hint="Email" x:Name="Login_Box" VerticalAlignment="Bottom" Text="{Binding Email}" Height="50"/>
         </Grid>
 
         <!--Password box-->
@@ -47,27 +41,21 @@
                 <ColumnDefinition/>
                 <ColumnDefinition Width="Auto" MinWidth="30" />
             </Grid.ColumnDefinitions>
-            <!--<PasswordBox
+            <PasswordBox
                     Style="{StaticResource MaterialDesignOutlinedPasswordBox}"
                     materialDesign:HintAssist.Hint="Password" 
-                    x:Name="Password_Box"
-                    VerticalAlignment="Bottom" 
-                    Height="50" Grid.ColumnSpan="2"
-                    Visibility="Visible">
-            </PasswordBox>-->
+                    x:Name="Password_Box" VerticalAlignment="Bottom" 
+                    Height="50" Grid.ColumnSpan="2" Visibility="Visible">
+            </PasswordBox>
             <TextBox
                 Style="{StaticResource MaterialDesignOutlinedTextBox}"
-                    materialDesign:HintAssist.Hint="Password" 
-                    x:Name="Password_Box_Revealed"
-                    VerticalAlignment="Bottom" 
-                    Height="50" Grid.ColumnSpan="2"
-                    Text="{Binding Password}">
+                materialDesign:HintAssist.Hint="Password" x:Name="Password_Box_Revealed" 
+                VerticalAlignment="Bottom" Height="50" Grid.ColumnSpan="2" 
+                Text="{Binding Password}" Visibility="Hidden">
             </TextBox>
-            <ToggleButton
-                    x:Name="Show_Pass_Button"
-                    Grid.Column="1"
-                    Style="{StaticResource MaterialDesignActionToggleButton}"
-                    IsChecked="False">
+            <ToggleButton x:Name="Show_Pass_Button" Grid.Column="1"
+                Style="{StaticResource MaterialDesignActionToggleButton}" IsChecked="False"
+                Checked="Show_Pass_Button_Checked" Unchecked="Show_Pass_Button_Unchecked">
                 <ToggleButton.Background>
                     <SolidColorBrush Opacity="0"></SolidColorBrush>
                 </ToggleButton.Background>
@@ -82,7 +70,7 @@
             </ToggleButton>
         </Grid>
 
-        <Label Content="Login" HorizontalAlignment="Left"  VerticalAlignment="Top" FontSize="40" Foreground="White" Margin="191,54,0,0"/>
+        <Label Content="Admin login" HorizontalAlignment="Left"  VerticalAlignment="Top" FontSize="40" Margin="191,54,0,0"/>
 
     </Grid>
 </Window>
