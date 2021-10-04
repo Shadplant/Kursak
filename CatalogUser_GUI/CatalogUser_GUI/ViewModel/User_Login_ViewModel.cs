@@ -3,11 +3,11 @@ using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Windows;
 
-namespace CatalogUser_GUI
+namespace Catalog_User_GUI
 {
-    public class Admin_Login_ViewModel : INotifyPropertyChanged
+    public class User_Login_ViewModel : INotifyPropertyChanged
     {
-        Admin_Login_Model model = new Admin_Login_Model();
+        User_Login_Model model = new User_Login_Model();
         private string email;
         private string password;
 
@@ -36,7 +36,7 @@ namespace CatalogUser_GUI
         {
             get
             {
-                return login_command ?? (login_command = new RelayCommand(obj => Login_Admin_ViewModel()));
+                return login_command ?? (login_command = new RelayCommand(obj => Login_User_ViewModel()));
             }
         }
 
@@ -53,7 +53,7 @@ namespace CatalogUser_GUI
             }
         }
 
-        public bool Login_Admin_ViewModel()
+        public bool Login_User_ViewModel()
         {
             bool isAutorize = false;
 

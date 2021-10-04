@@ -10,25 +10,29 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace CatalogUser_GUI
+namespace Catalog_User_GUI
 {
     /// <summary>
-    /// Interaction logic for Game_Add_View.xaml
+    /// Interaction logic for Admin_Login_View.xaml
     /// </summary>
-    public partial class Game_Add_View : Window
+    public partial class User_Login_View : Window
     {
-        public Game_Add_View()
+        User_Login_ViewModel model;
+        public User_Login_View()
         {
             InitializeComponent();
-            DataContext = new Game_Add_ViewModel();
+            DataContext = model =  new User_Login_ViewModel();
         }
 
-        private void Cancel_Button_Click(object sender, RoutedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
-            this.Close();
+            if (model.Login_User_ViewModel())
+            {
+                //new Game_Add_View().Show();
+                this.Close();
+            }
         }
     }
 }

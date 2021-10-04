@@ -6,7 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace CatalogUser_GUI
+namespace Catalog_User_GUI
 {
     /// <summary>
     /// Interaction logic for App.xaml

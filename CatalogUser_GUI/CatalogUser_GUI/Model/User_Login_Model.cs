@@ -1,9 +1,9 @@
 ﻿using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
-namespace CatalogUser_GUI
+namespace Catalog_User_GUI
 {
-    public class Admin_Login_Model : INotifyPropertyChanged
+    public class User_Login_Model : INotifyPropertyChanged
     {
         public bool Check_Email_Model(string Email)
         {

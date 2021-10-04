@@ -3,7 +3,7 @@ using System;
 using System.Configuration;
 using System.ServiceModel;
 
-namespace CatalogUser_GUI
+namespace Catalog_User_GUI
 {
     class ServiceSingleton
     {
