@@ -8,8 +8,14 @@ namespace Catalog_Admin_GUI
     public class Admin_Refer_ViewModel : Base_Model
     {
         Admin_Refer_Model model = new Admin_Refer_Model();
+        public List<string> Refered_Admins = new List<string>();
         private string email;
         private string password;
+
+        public Admin_Refer_ViewModel()
+        {
+            Refered_Admins = model.Get_Admin_List(1);
+        }
 
         public string Email
         {
@@ -53,16 +59,19 @@ namespace Catalog_Admin_GUI
             }
         }
 
-        public bool Refer_Admin_ViewModel()
+        public void Refer_Admin_ViewModel()
         {
-            bool exists = false;
-
-            if (Check_Email_ViewModel())
+            try
             {
-                exists = true;
+                if (!Check_Email_ViewModel())
+                {
+                    model.Refer_Admin_Model(1, Email, Password);
+                }
             }
-
-            return exists;
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

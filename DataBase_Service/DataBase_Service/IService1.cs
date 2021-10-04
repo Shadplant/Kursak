@@ -1,4 +1,5 @@
-﻿using System.ServiceModel;
+﻿using System.Collections.Generic;
+using System.ServiceModel;
 
 namespace DataBase_Service
 {
@@ -11,6 +12,12 @@ namespace DataBase_Service
 
         [OperationContract]
         string Login_Admin(string Email, string Password);
+
+        [OperationContract]
+        void Refer_Admin(int ID, string Email, string Password);
+
+        [OperationContract]
+        List<string> Get_Admin_List(int ID);
 
         [OperationContract]
         bool Check_Email(string Email);

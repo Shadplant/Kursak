@@ -16,11 +16,11 @@
              FontFamily="{DynamicResource MaterialDesignFont}">
     <Grid>
 
-        <Grid MaxHeight="50" Margin="10,105,515,195">
+        <Grid MaxHeight="50" Margin="10,37,515,263">
             <TextBox Style="{StaticResource MaterialDesignOutlinedTextBox}" materialDesign:HintAssist.Hint="Email" x:Name="Login_Box" VerticalAlignment="Bottom" Text="{Binding Email}" Height="50"/>
         </Grid>
 
-        <Grid MaxHeight="50" Margin="10,216,515,96">
+        <Grid MaxHeight="50" Margin="10,181,515,131">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
                 <ColumnDefinition Width="Auto" MinWidth="30" />
@@ -64,8 +64,7 @@
             Foreground="Black"
             Margin="11,355,518,63" 
             Height="Auto"
-            Click="Login_Button_Click"
-            Command="{Binding Login_Command}" RenderTransformOrigin="0.5,0.5">
+            Command="{Binding Refer_Command}" RenderTransformOrigin="0.5,0.5">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -77,15 +76,12 @@
         </Button>
 
         <ScrollViewer Margin="300,0,0,0">
-            <ListView x:Name="All_Item_Panel" ScrollViewer.HorizontalScrollBarVisibility="Disabled" ScrollViewer.VerticalScrollBarVisibility="Auto">
+            <ListView x:Name="All_Item_Panel" ScrollViewer.HorizontalScrollBarVisibility="Disabled" ScrollViewer.VerticalScrollBarVisibility="Auto" ItemsSource="{Binding Refered_Admins}">
                 <ListView.ItemsPanel>
                     <ItemsPanelTemplate>
                         <StackPanel/>
                     </ItemsPanelTemplate>
                 </ListView.ItemsPanel>
-                <ListView.ItemTemplate>
-                    <DataTemplate></DataTemplate>
-                </ListView.ItemTemplate>
             </ListView>
         </ScrollViewer>
     </Grid>

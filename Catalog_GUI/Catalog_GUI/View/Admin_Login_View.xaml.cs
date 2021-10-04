@@ -57,5 +57,12 @@ namespace Catalog_Admin_GUI
                 this.Close();
             }
         }
+
+        protected override void OnMouseLeftButtonDown(MouseButtonEventArgs e)
+        {
+            base.OnMouseLeftButtonDown(e);
+            this.DragMove();
+        }
+
     }
 }

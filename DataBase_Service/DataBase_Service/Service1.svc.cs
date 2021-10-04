@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using DataBase_Logic;
 namespace DataBase_Service
 {
@@ -18,9 +19,19 @@ namespace DataBase_Service
             return new Admin_Reposetory().Check_Email(Email);
         }
 
+        public List<string> Get_Admin_List(int ID)
+        {
+            return new Admin_Reposetory().Get_Admin_List(ID);
+        }
+
         public string Login_Admin(string Email, string Password)
         {
             return new Admin_Reposetory().Login_Admin(Email, Password);
+        }
+
+        public void Refer_Admin(int ID, string Email, string Password)
+        {
+            new Admin_Reposetory().Refer_Admin(ID, Email, Password);
         }
     }
 }

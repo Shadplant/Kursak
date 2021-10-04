@@ -4,7 +4,6 @@ using System.Linq;
 using System.ServiceModel;
 using System.Text;
 using System.Threading.Tasks;
-using DataBase_Service;
 
 namespace Catalog_Admin_GUI
 {
@@ -18,12 +17,12 @@ namespace Catalog_Admin_GUI
         string Login_Admin(string Email, string Password);
 
         [OperationContract]
-        void Refer_Admin(string Email, string Password);
+        void Refer_Admin(int ID, string Email, string Password);
+
+        [OperationContract]
+        List<string> Get_Admin_List(int ID);
 
         [OperationContract]
         bool Check_Email(string Email);
-
-        [OperationContract]
-        bool Add_Admin(string Email, string Password);
     }
 }

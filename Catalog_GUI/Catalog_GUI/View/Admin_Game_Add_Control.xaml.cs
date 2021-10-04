@@ -18,7 +18,7 @@ namespace Catalog_Admin_GUI
     /// </summary>
     public partial class Admin_Game_Add_Control : UserControl
     {
-        public Admin_Add_Control()
+        public Admin_Game_Add_Control()
         {
             InitializeComponent();
         }

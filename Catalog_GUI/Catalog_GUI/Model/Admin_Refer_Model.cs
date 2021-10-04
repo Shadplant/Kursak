@@ -13,9 +13,14 @@ namespace Catalog_Admin_GUI
             return ServiceSingleton.getInstance().getService().Check_Email(Email.ToLower());
         }
 
-        public void Refer_Admin_Model(string Email, string Password)
+        public List<string> Get_Admin_List(int ID)
         {
-            ServiceSingleton.getInstance().getService().Refer_Admin(Email.ToLower(), Password);
+            return ServiceSingleton.getInstance().getService().Get_Admin_List(ID);
+        }
+
+        public void Refer_Admin_Model(int ID, string Email, string Password)
+        {
+            ServiceSingleton.getInstance().getService().Refer_Admin(ID, Email.ToLower(), Password);
         }
     }
 }

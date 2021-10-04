@@ -21,6 +21,20 @@ namespace Catalog_Admin_GUI
         public Admin_Refer_Control()
         {
             InitializeComponent();
+            DataContext = new Admin_Refer_ViewModel();
+        }
+
+        private void Show_Pass_Button_Checked(object sender, RoutedEventArgs e)
+        {
+            Password_Box.Visibility = Visibility.Hidden;
+            Password_Box_Revealed.Visibility = Visibility.Visible;
+            Password_Box_Revealed.Text = Password_Box.Password;
+        }
+        private void Show_Pass_Button_Unchecked(object sender, RoutedEventArgs e)
+        {
+            Password_Box.Visibility = Visibility.Visible;
+            Password_Box_Revealed.Visibility = Visibility.Hidden;
+            Password_Box.Password = Password_Box_Revealed.Text;
         }
     }
 }

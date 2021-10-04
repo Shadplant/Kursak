@@ -1,5 +1,4 @@
-﻿using DataBase_Service;
-using System;
+﻿using System;
 using System.Configuration;
 using System.ServiceModel;
 
