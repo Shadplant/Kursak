@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Text;
+using System.Windows;
 
 namespace Catalog_Admin_GUI
 {
@@ -23,5 +24,56 @@ namespace Catalog_Admin_GUI
             Games = model.Get_Gamelist();
             SelectedGame = new Game();
         }
+
+        private RelayCommand delete_command;
+        public RelayCommand Delete_Command
+        {
+            get
+            {
+                return delete_command ?? (delete_command = new RelayCommand(obj => Delete_Game_ViewModel()));
+            }
+        }
+
+        private RelayCommand edit_command;
+        public RelayCommand Edit_Command
+        {
+            get
+            {
+                return edit_command ?? (edit_command = new RelayCommand(obj => Edit_Game_ViewModel()));
+            }
+        }
+
+        public void Delete_Game_ViewModel()
+        {
+            try
+            {
+                if (SelectedGame.Game_ID > 0)
+                {
+                    model.Delete_Game(SelectedGame);
+                    MessageBox.Show("Success");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        public void Edit_Game_ViewModel()
+        {
+            try
+            {
+                if (SelectedGame.Game_ID > 0)
+                {
+                    model.Edit_Game(SelectedGame);
+                    MessageBox.Show("Success");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
     }
 }

@@ -13,8 +13,12 @@
              TextOptions.TextRenderingMode="Auto"
              FontFamily="{DynamicResource MaterialDesignFont}">
     <Grid>
-        <ScrollViewer>
-            <ListView x:Name="All_Item_Panel" ScrollViewer.HorizontalScrollBarVisibility="Disabled" ScrollViewer.VerticalScrollBarVisibility="Auto" ItemsSource="{Binding Games}">
+        
+        <Button Margin="400,0,0,418" Content="Delete" Command="{Binding }"/>
+        <Button Margin="0,0,400,418" Content="Edit" Command="{Binding }"/>
+        
+        <ScrollViewer Margin="0,40,0,0">
+            <ListView x:Name="All_Item_Panel" ScrollViewer.HorizontalScrollBarVisibility="Disabled" ScrollViewer.VerticalScrollBarVisibility="Auto" ItemsSource="{Binding Games}" SelectedItem="{Binding Selected_Game}">
                 <ListView.ItemsPanel>
                     <ItemsPanelTemplate>
                         <StackPanel/>

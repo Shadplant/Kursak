@@ -12,26 +12,25 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace WpfApp1
+namespace Catalog_Admin_GUI
 {
     /// <summary>
     /// Interaction logic for Admin_Login_View.xaml
     /// </summary>
     public partial class Admin_Login_View : Window
     {
-        Admin_Login_ViewModel model;
+        Admin_Login_ViewModel model = new Admin_Login_ViewModel();
         public Admin_Login_View()
         {
             InitializeComponent();
-            DataContext = model =  new Admin_Login_ViewModel();
+            DataContext = model;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             if (model.Login_Admin_ViewModel())
             {
-
-                new Game_Add_View().Show();
+                new Admin_Main_View().Show();
                 this.Close();
             }
         }

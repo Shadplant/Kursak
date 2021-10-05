@@ -6,20 +6,20 @@
         xmlns:local="clr-namespace:Catalog_Admin_GUI"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d"
-        Title="Admin_Main_View" Height="450" Width="800"
+        Title="Admin_Main_View" Height="550" Width="800"
         TextElement.Foreground="White"
         TextElement.FontWeight="Regular"
         TextElement.FontSize="13"
         TextOptions.TextFormattingMode="Ideal"
         TextOptions.TextRenderingMode="Auto"
-        Background="{DynamicResource MaterialDesignLightBackground}"
+        Background="LightGray"
         FontFamily="{DynamicResource MaterialDesignFont}" WindowStyle="None" ResizeMode="NoResize">
     <Grid>
-        <Rectangle Fill="BlueViolet" Margin="0,0,0,360"></Rectangle>
+        <Rectangle Fill="BlueViolet" Margin="0,0,0,491"></Rectangle>
 
-        <RadioButton x:Name="Gamelist_Button" Content="Games List" Margin="10,40,600,378" IsChecked="True" Style="{StaticResource MaterialDesignAccentRadioButton}" HorizontalAlignment="Center" Foreground="White" Click="Switch_View"/>
-        <RadioButton x:Name="Referal_Button" Content="Admin Referal" Margin="305,40,305,378" Style="{StaticResource MaterialDesignAccentRadioButton}" HorizontalAlignment="Center" Foreground="White" Click="Switch_View"/>
-        <RadioButton x:Name="Add_Item_Button" Content="Game Add" Margin="600,40,10,378" Style="{StaticResource MaterialDesignAccentRadioButton}" HorizontalAlignment="Center" Foreground="White" Click="Switch_View"/>
+        <RadioButton x:Name="Gamelist_Button" Content="Games List" Margin="64,20,0,504" IsChecked="True" Style="{StaticResource MaterialDesignAccentRadioButton}" HorizontalAlignment="Left" Foreground="White" Click="Switch_View"/>
+        <RadioButton x:Name="Referal_Button" Content="Admin Referal" Margin="0,20,0,504" Style="{StaticResource MaterialDesignAccentRadioButton}" HorizontalAlignment="Center" Foreground="White" Click="Switch_View"/>
+        <RadioButton x:Name="Add_Item_Button" Content="Game Add" Margin="631,20,0,504" Style="{StaticResource MaterialDesignAccentRadioButton}" HorizontalAlignment="Left" Foreground="White" Click="Switch_View"/>
 
         <!--Settings Menu Buttons-->
         <Button VerticalAlignment="Top" HorizontalAlignment="Right" Style="{StaticResource Menu_Button_Stylistic}" materialDesign:RippleAssist.IsDisabled="True" Click="Exit_Button_Click">
@@ -29,7 +29,7 @@
             <materialDesign:PackIcon Kind="Logout" Height="25" Width="25"/>
         </Button>
 
-        <Grid x:Name="Window_Control_Grid" Margin="0,90,0,0"></Grid>
+        <Grid x:Name="Window_Control_Grid" Margin="0,64,0,0"></Grid>
 
     </Grid>
 </Window>

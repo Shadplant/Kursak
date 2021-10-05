@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace Catalog_GUI
+namespace Catalog_Admin_GUI
 {
     public class Game_Add_ViewModel : INotifyPropertyChanged
     {
@@ -15,7 +15,7 @@ namespace Catalog_GUI
         private string name;
         private string description;
         private string image_link;
-        private int admin_ID = 1;
+        private string game_link;
 
         public string Name
         {
@@ -47,13 +47,13 @@ namespace Catalog_GUI
             }
         }
 
-        public int Admin_ID
+        public string Game_Link
         {
-            get { return admin_ID; }
+            get { return game_link; }
             set
             {
-                admin_ID = value;
-                OnPropertyChanged("Admin_ID");
+                game_link = value;
+                OnPropertyChanged("Game_Link");
             }
         }
 
@@ -70,7 +70,7 @@ namespace Catalog_GUI
         {
             try
             {
-                model.Add_Game_Model(name, description, image_link, admin_ID);
+                model.Add_Game_Model(name, description, image_link, game_link);
                 MessageBox.Show("Success");
             }
             catch (Exception ex)

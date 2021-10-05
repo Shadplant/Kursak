@@ -4,6 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Catalog_Admin_GUI"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800" Background="Gray"
              TextElement.Foreground="Black"
@@ -13,5 +14,10 @@
              TextOptions.TextRenderingMode="Auto"
              FontFamily="{DynamicResource MaterialDesignFont}">
     <Grid>
+        <TextBox HorizontalAlignment="Left" Height="50" Margin="10,10,0,0" TextWrapping="Wrap" Text="{Binding Name}" Style="{StaticResource MaterialDesignFilledTextBox}" materialDesign:HintAssist.Hint="Name" VerticalAlignment="Top" Width="205"/>
+        <TextBox HorizontalAlignment="Left" Height="296" Margin="10,65,0,0" TextWrapping="Wrap" Text="{Binding Description}" Style="{StaticResource MaterialDesignFilledTextBox}" materialDesign:HintAssist.Hint="Description" VerticalAlignment="Top" Width="772"/>
+        <TextBox HorizontalAlignment="Left" Height="50" Margin="246,10,0,0" TextWrapping="Wrap" Text="{Binding Image_Link}" Style="{StaticResource MaterialDesignFilledTextBox}" materialDesign:HintAssist.Hint="Image Link" VerticalAlignment="Top" Width="536"/>
+        <TextBox HorizontalAlignment="Left" Height="50" Margin="10,377,0,0" TextWrapping="Wrap" Text="{Binding Game_Link}" Style="{StaticResource MaterialDesignFilledTextBox}" materialDesign:HintAssist.Hint="Game Link" VerticalAlignment="Top" Width="504"/>
+        <Button Content="Accept" HorizontalAlignment="Left" Margin="532,377,0,0" VerticalAlignment="Top" Width="250" Command="{Binding Add_Game_Command}" Height="50"/>
     </Grid>
 </UserControl>

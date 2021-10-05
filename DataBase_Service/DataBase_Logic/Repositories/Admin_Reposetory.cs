@@ -1,5 +1,6 @@
 ﻿
 using Dapper;
+using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
 
@@ -20,6 +21,22 @@ namespace DataBase_Logic
             using (SqlConnection conn = new SqlConnection(DatabaseConnectionSingleton.getInstance().getConnectionString()))
             {
                 return conn.Query<string>("EXEC Login_Admin \'"+Email+"\' ,\'"+Password+"\'").FirstOrDefault();
+            }
+        }
+
+        public List<string> Get_Admin_List(int id)
+        {
+            using (SqlConnection conn = new SqlConnection(DatabaseConnectionSingleton.getInstance().getConnectionString()))
+            {
+                return conn.Query<string>("EXEC Get_Refered_Admins " + id).ToList();
+            }
+        }
+
+        public void Refer_Admin(int id, string Email, string Password)
+        {
+            using (SqlConnection conn = new SqlConnection(DatabaseConnectionSingleton.getInstance().getConnectionString()))
+            {
+                conn.Execute("EXEC Login_Admin " + id + ",\'" + Password + "\' ,\'" + Email + "\' ,\'");
             }
         }
     }

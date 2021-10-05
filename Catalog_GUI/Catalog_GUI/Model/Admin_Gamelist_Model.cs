@@ -15,7 +15,7 @@ namespace Catalog_Admin_GUI
 
         public void Edit_Game(Game game)
         {
-            ServiceSingleton.getInstance().getService().Edit_Game(game.Game_ID);
+            ServiceSingleton.getInstance().getService().Edit_Game(JsonConvert.SerializeObject(game));
         }
 
         public void Delete_Game(Game game)

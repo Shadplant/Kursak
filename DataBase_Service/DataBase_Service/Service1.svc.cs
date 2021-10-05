@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using DataBase_Logic;
 using Newtonsoft.Json;
 
@@ -35,6 +36,16 @@ namespace DataBase_Service
         public string Login_Admin(string Email, string Password)
         {
             return new Admin_Reposetory().Login_Admin(Email, Password);
+        }
+
+        public List<string> Get_Admin_List(int id)
+        {
+            return new Admin_Reposetory().Get_Admin_List(id);
+        }
+
+        public void Refer_Admin(int id, string Email, string Password)
+        {
+            new Admin_Reposetory().Refer_Admin(id, Email, Password);
         }
     }
 }
