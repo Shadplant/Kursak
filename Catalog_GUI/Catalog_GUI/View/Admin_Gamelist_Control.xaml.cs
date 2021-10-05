@@ -21,6 +21,7 @@ namespace Catalog_Admin_GUI
         public Admin_Gamelist_Control()
         {
             InitializeComponent();
+            DataContext = new Admin_Gamelist_ViewModel();
         }
     }
 }

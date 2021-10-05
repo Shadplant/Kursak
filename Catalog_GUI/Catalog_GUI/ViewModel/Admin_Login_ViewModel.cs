@@ -3,9 +3,9 @@ using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Windows;
 
-namespace Catalog_Admin_GUI
+namespace Catalog_GUI
 {
-    public class Admin_Login_ViewModel : Base_Model
+    public class Admin_Login_ViewModel : INotifyPropertyChanged
     {
         Admin_Login_Model model = new Admin_Login_Model();
         private string email;
@@ -44,7 +44,7 @@ namespace Catalog_Admin_GUI
         {
             try
             {
-                return model.Check_Email_Model(Email);
+                return model.Check_Email_Model(Email.ToLower());
             }
             catch (Exception ex)
             {
@@ -63,6 +63,13 @@ namespace Catalog_Admin_GUI
             }
 
             return isAutorize;
+        }
+
+        public event PropertyChangedEventHandler PropertyChanged;
+        public void OnPropertyChanged([CallerMemberName] string prop = "")
+        {
+            if (PropertyChanged != null)
+                PropertyChanged(this, new PropertyChangedEventArgs(prop));
         }
     }
 }

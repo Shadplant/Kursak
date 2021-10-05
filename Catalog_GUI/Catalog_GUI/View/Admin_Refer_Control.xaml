@@ -20,7 +20,7 @@
             <TextBox Style="{StaticResource MaterialDesignOutlinedTextBox}" materialDesign:HintAssist.Hint="Email" x:Name="Login_Box" VerticalAlignment="Bottom" Text="{Binding Email}" Height="50"/>
         </Grid>
 
-        <Grid MaxHeight="50" Margin="10,181,515,131">
+        <Grid MaxHeight="50" Margin="10,151,515,151">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
                 <ColumnDefinition Width="Auto" MinWidth="30" />
@@ -54,26 +54,7 @@
             </ToggleButton>
         </Grid>
 
-        <Button
-            Style="{StaticResource MaterialDesignRaisedDarkButton}"
-            MinWidth="40"
-            MaxWidth="200"
-            MaxHeight="50"
-            FontSize="16"
-            Content="Refer"
-            Foreground="Black"
-            Margin="11,355,518,63" 
-            Height="Auto"
-            Command="{Binding Refer_Command}" RenderTransformOrigin="0.5,0.5">
-            <Button.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="0.136"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Button.RenderTransform>
-        </Button>
+        <Button Style="{StaticResource MaterialDesignRaisedDarkButton}" FontSize="16" Content="Refer" Foreground="Black" Margin="46,280,551,0" Command="{Binding Refer_Command}" Height="41" VerticalAlignment="Top"/>
 
         <ScrollViewer Margin="300,0,0,0">
             <ListView x:Name="All_Item_Panel" ScrollViewer.HorizontalScrollBarVisibility="Disabled" ScrollViewer.VerticalScrollBarVisibility="Auto" ItemsSource="{Binding Refered_Admins}">
@@ -82,6 +63,11 @@
                         <StackPanel/>
                     </ItemsPanelTemplate>
                 </ListView.ItemsPanel>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding}"/>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
             </ListView>
         </ScrollViewer>
     </Grid>

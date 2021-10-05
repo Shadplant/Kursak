@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Catalog_Admin_GUI
+namespace WpfApp1
 {
     /// <summary>
     /// Interaction logic for Game_Add_View.xaml

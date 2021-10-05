@@ -7,8 +7,9 @@ namespace Catalog_Admin_GUI
 {
     public class Admin_Refer_ViewModel : Base_Model
     {
+        public List<string> Refered_Admins { get; set; }
+
         Admin_Refer_Model model = new Admin_Refer_Model();
-        public List<string> Refered_Admins = new List<string>();
         private string email;
         private string password;
 

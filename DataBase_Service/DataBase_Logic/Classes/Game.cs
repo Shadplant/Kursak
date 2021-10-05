@@ -3,51 +3,47 @@ namespace DataBase_Logic
 {
     public class Game
     {
-        private int id;
-        private string name;
-        private string imageurl;
-        private string description;
-        private int publishingadmin;
+        private int game_id;
+        private string game_name;
+        private string game_image_link;
+        private string game_description;
+        private string game_link;
+        private int rating;
 
-        public Game() { }
-
-        public Game(int id, string name, string imageurl, string description, int publishingadmin)
+        public int Game_ID
         {
-            this.Id = id;
-            this.Name = name;
-            this.ImageUrl = imageurl;
-            this.Description = description;
-            this.PublishingAdmin = publishingadmin;
+            get { return game_id; }
+            set { game_id = value; }
         }
 
-        public int Id
+        public string Game_Name
         {
-            get { return id; }
-            set { id = value; }
+            get { return game_name; }
+            set { game_name = value; }
         }
 
-        public string Name
+        public string Game_Image_Link
         {
-            get { return name; }
-            set { name = value; }
+            get { return game_image_link; }
+            set { game_image_link = value; }
         }
 
-        public string ImageUrl
+        public string Game_Link
         {
-            get { return imageurl; }
-            set { imageurl = value; }
+            get { return game_link; }
+            set { game_link = value; }
         }
 
-        public string Description
+        public int Rating
         {
-            get { return description; }
-            set { description = value; }
+            get { return rating; }
+            set { rating = value; }
         }
 
-        public int PublishingAdmin
+        public string Game_Description
         {
-            get { return publishingadmin; }
-            set { publishingadmin = value; }
+            get { return game_description; }
+            set { game_description = value; }
         }
     }
 }

@@ -18,10 +18,11 @@ namespace Catalog_Admin_GUI
     /// </summary>
     public partial class Admin_Refer_Control : UserControl
     {
+        Admin_Refer_ViewModel viewmodel = new Admin_Refer_ViewModel();
         public Admin_Refer_Control()
         {
             InitializeComponent();
-            DataContext = new Admin_Refer_ViewModel();
+            DataContext = viewmodel;
         }
 
         private void Show_Pass_Button_Checked(object sender, RoutedEventArgs e)
