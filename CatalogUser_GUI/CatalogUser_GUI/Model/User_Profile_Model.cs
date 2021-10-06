@@ -2,9 +2,13 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Catalog_User_GUI.Model
+namespace Catalog_User_GUI
 {
-    class User_Profile_Model
+    public class User_Profile_Model : Base_Model 
     {
+        public string Get_User_Profile_Model(int id)
+        {
+            return ServiceSingleton.getInstance().getService().Get_Profile(id);
+        }
     }
 }

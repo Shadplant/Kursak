@@ -2,9 +2,10 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Catalog_User_GUI.ViewModel
+namespace Catalog_User_GUI
 {
-    class User_Gamelist_ViewModel
+    public class User_Gamelist_ViewModel : Base_Model
     {
+
     }
 }

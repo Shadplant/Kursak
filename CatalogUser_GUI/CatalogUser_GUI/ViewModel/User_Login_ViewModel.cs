@@ -5,19 +5,19 @@ using System.Windows;
 
 namespace Catalog_User_GUI
 {
-    public class User_Login_ViewModel : INotifyPropertyChanged
+    public class User_Login_ViewModel : Base_Model
     {
         User_Login_Model model = new User_Login_Model();
-        private string email;
+        private string login;
         private string password;
 
-        public string Email
+        public string Login
         {
-            get { return email; }
+            get { return login; }
             set
             {
-                email = value;
-                OnPropertyChanged("Email");
+                login = value;
+                OnPropertyChanged("Login");
             }
         }
 
@@ -40,11 +40,11 @@ namespace Catalog_User_GUI
             }
         }
 
-        public bool Check_Email_ViewModel()
+        public bool Check_Login_ViewModel()
         {
             try
             {
-                return model.Check_Email_Model(Email.ToLower());
+                return model.Check_Login_Model(Login.ToLower());
             }
             catch (Exception ex)
             {
@@ -57,19 +57,12 @@ namespace Catalog_User_GUI
         {
             bool isAutorize = false;
 
-            if (Check_Email_ViewModel())
+            if (Check_Login_ViewModel())
             {
                 isAutorize = true;
             }
 
             return isAutorize;
-        }
-
-        public event PropertyChangedEventHandler PropertyChanged;
-        public void OnPropertyChanged([CallerMemberName] string prop = "")
-        {
-            if (PropertyChanged != null)
-                PropertyChanged(this, new PropertyChangedEventArgs(prop));
         }
     }
 }

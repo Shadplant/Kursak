@@ -21,6 +21,7 @@ namespace Catalog_User_GUI
         public User_News_Control()
         {
             InitializeComponent();
+            DataContext = new User_News_ViewModel();
         }
     }
 }

@@ -1,4 +1,4 @@
-﻿<Window x:Class="Catalog_User_GUI.User_Login_View"
+﻿<Window x:Class="Catalog_User_GUI.User_Register_View"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Catalog_User_GUI"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d"
-        Title="Admin_Login_View" Height="450" Width="800"
+        Title="Admin_Register_View" Height="450" Width="800"
         TextElement.Foreground="White"
         TextElement.FontWeight="Regular"
         TextElement.FontSize="13"
@@ -24,16 +24,39 @@
             MaxHeight="50"
             FontSize="16"
             Content="Login" 
-            Margin="45,227,45,33" 
+            Margin="45,353,325,49" 
             Height="Auto"
-            Click="Login_Button_Click"
-            Command="{Binding Login_Command}"/>
+            Click="Login_Button_Click"/>
+
+        <!--Register Button-->
+        <Button
+            Style="{StaticResource MaterialDesignRaisedDarkButton}"
+            MinWidth="40"
+            MaxWidth="200"
+            MaxHeight="50"
+            FontSize="16"
+            Content="Register" 
+            Margin="277,353,45,49" 
+            Height="Auto"
+            Click="Button_Click"
+            Command="{Binding Register_Command}"/>
+
+        <!--Email box-->
+        <Grid MaxHeight="50" Margin="45,-21,45,62">
+            <TextBox 
+                Style="{StaticResource MaterialDesignOutlinedTextBox}" 
+                materialDesign:HintAssist.Hint="Email" 
+                x:Name="Email_Box"
+                VerticalAlignment="Bottom"
+                Text="{Binding Email}"
+                Height="50"/>
+        </Grid>
 
         <!--Login box-->
-        <Grid MaxHeight="50" Margin="45,-11,45,54">
+        <Grid MaxHeight="50" Margin="45,38,45,5">
             <TextBox 
                     Style="{StaticResource MaterialDesignOutlinedTextBox}" 
-                    materialDesign:HintAssist.Hint="Email" 
+                    materialDesign:HintAssist.Hint="Login" 
                     x:Name="Login_Box"
                     VerticalAlignment="Bottom"
                     Text="{Binding Login}"
@@ -42,7 +65,7 @@
         </Grid>
 
         <!--Password box-->
-        <Grid MaxHeight="50" Margin="45,54,45,-11">
+        <Grid MaxHeight="50" Margin="45,96,45,-53">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
                 <ColumnDefinition Width="Auto" MinWidth="30" />
@@ -85,8 +108,7 @@
             </ToggleButton>
         </Grid>
 
-
-        <Label Content="Login" HorizontalAlignment="Left"  VerticalAlignment="Top" FontSize="40" Foreground="White" Margin="191,54,0,0"/>
+        <Label Content="Register"  VerticalAlignment="Top" FontSize="40" Foreground="White" Margin="0,54,191,0" HorizontalAlignment="Right" Width="154"/>
 
     </Grid>
 </Window>

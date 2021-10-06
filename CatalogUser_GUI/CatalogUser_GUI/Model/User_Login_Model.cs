@@ -3,23 +3,16 @@ using System.Runtime.CompilerServices;
 
 namespace Catalog_User_GUI
 {
-    public class User_Login_Model : INotifyPropertyChanged
+    public class User_Login_Model : Base_Model
     {
-        public bool Check_Email_Model(string Email)
+        public bool Check_Login_Model(string Login)
         {
-            return ServiceSingleton.getInstance().getService().Check_Email(Email);
+            return ServiceSingleton.getInstance().getService().Check_Login(Login);
         }
 
-        public string Login_Admin_Model(string Email, string Password)
+        public int Login_User_Model(string Login, string Password)
         {
-            return ServiceSingleton.getInstance().getService().Login_Admin(Email, Password);
-        }
-
-        public event PropertyChangedEventHandler PropertyChanged;
-        public void OnPropertyChanged([CallerMemberName] string prop = "")
-        {
-            if (PropertyChanged != null)
-                PropertyChanged(this, new PropertyChangedEventArgs(prop));
+            return ServiceSingleton.getInstance().getService().Login_User(Login, Password);
         }
     }
 }

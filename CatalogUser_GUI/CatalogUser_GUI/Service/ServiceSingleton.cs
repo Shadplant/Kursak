@@ -11,10 +11,9 @@ namespace Catalog_User_GUI
         private static Uri uri;
         private static EndpointAddress endpointAddress;
         private static BasicHttpBinding binding;
-        private static ChannelFactory<IService1> channelFactory;
-        private static IService1 service;
+        private static ChannelFactory<IServiceUser> channelFactory;
+        private static IServiceUser service;
     
-
         private ServiceSingleton()
         { }
 
@@ -26,12 +25,12 @@ namespace Catalog_User_GUI
                 uri = new Uri(ConfigurationManager.ConnectionStrings["ServerConn"].ConnectionString);
                 endpointAddress = new EndpointAddress(uri);
                 binding = new BasicHttpBinding();
-                channelFactory = new ChannelFactory<IService1>(binding, endpointAddress);
+                channelFactory = new ChannelFactory<IServiceUser>(binding, endpointAddress);
                 service = channelFactory.CreateChannel();
             }
             return instance;
         }
 
-       public IService1 getService() => service;
+       public IServiceUser getService() => service;
     }
 }

@@ -21,6 +21,7 @@ namespace Catalog_User_GUI
         public User_Profile_Control()
         {
             InitializeComponent();
+            DataContext = new User_Profile_ViewModel();
         }
     }
 }

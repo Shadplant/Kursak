@@ -4,9 +4,28 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Catalog_User_GUI"
-             mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             mc:Ignorable="d"
+             d:DesignHeight="450" d:DesignWidth="800"
+             TextElement.Foreground="White"
+             TextElement.FontWeight="Regular"
+             TextElement.FontSize="13"
+             TextOptions.TextFormattingMode="Ideal"
+             TextOptions.TextRenderingMode="Auto"
+             Background="{DynamicResource MaterialDesignDarkBackground}"
+             FontFamily="{DynamicResource MaterialDesignFont}">
     <Grid>
-            
+        <Image Margin="10,10,0,0" Source="{Binding Userinfo.Pic_Url}" Height="200" Width="239"
+                VerticalAlignment="Top" HorizontalAlignment="Left"/>
+        <Grid x:Name="User_Vital_Grid" DataContext="{Binding Userinfo}">
+            <TextBox x:Name="Username_Textbox" HorizontalAlignment="Left" Height="50" Margin="10,225,0,0" TextWrapping="Wrap" VerticalAlignment="Top"
+                Width="358" Style="{StaticResource MaterialDesignOutlinedTextBox}" materialDesign:HintAssist.Hint="Username" IsEnabled="False" Text="{Binding Username}"/>
+            <PasswordBox x:Name="Password_Textbox" HorizontalAlignment="Left" Height="50" Margin="454,323,0,0" VerticalAlignment="Top" Width="321"
+                Style="{StaticResource MaterialDesignOutlinedPasswordBox}" materialDesign:HintAssist.Hint="Password" IsEnabled="False"/>
+            <TextBox x:Name="Email_Textbox" HorizontalAlignment="Left" Height="50" Margin="11,323,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="357"
+                Style="{StaticResource MaterialDesignOutlinedTextBox}" materialDesign:HintAssist.Hint="Email" IsEnabled="False" Text="{Binding Email}"/>
+            <TextBox x:Name="Image_Textbox" HorizontalAlignment="Left" Height="50" Margin="305,65,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="431"
+                Style="{StaticResource MaterialDesignOutlinedTextBox}" materialDesign:HintAssist.Hint="Image Url" IsEnabled="False" Text="{Binding Image_Url}"/>
+        </Grid>
     </Grid>
 </UserControl>

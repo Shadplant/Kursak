@@ -13,21 +13,25 @@ using System.Windows.Shapes;
 namespace Catalog_User_GUI
 {
     /// <summary>
-    /// Interaction logic for User_Game_View.xaml
+    /// Interaction logic for User_Review_View.xaml
     /// </summary>
-    public partial class User_Game_View : Window
+    public partial class User_Review_View : Window
     {
-        User_Game_ViewModel model = new User_Game_ViewModel();
-        public User_Game_View()
+        User_Review_ViewModel model = new User_Review_ViewModel();
+        public User_Review_View()
         {
             InitializeComponent();
             DataContext = model;
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Accept_Button_Click(object sender, RoutedEventArgs e)
         {
-            new User_Review_View().ShowDialog();
-            model.Refresh();
+            model.
+        }
+
+        private void Decline_Button_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

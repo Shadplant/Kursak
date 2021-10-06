@@ -21,6 +21,7 @@ namespace Catalog_User_GUI
         public User_Gamelist_Control()
         {
             InitializeComponent();
+            DataContext = new User_Gamelist_ViewModel();
         }
     }
 }

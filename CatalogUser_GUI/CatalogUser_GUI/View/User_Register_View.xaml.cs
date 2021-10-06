@@ -13,12 +13,12 @@ using System.Windows.Shapes;
 namespace Catalog_User_GUI
 {
     /// <summary>
-    /// Interaction logic for User_Game_View.xaml
+    /// Interaction logic for User_Register_View.xaml
     /// </summary>
-    public partial class User_Game_View : Window
+    public partial class User_Register_View : Window
     {
-        User_Game_ViewModel model = new User_Game_ViewModel();
-        public User_Game_View()
+        User_Register_ViewModel model = new User_Register_ViewModel();
+        public User_Register_View()
         {
             InitializeComponent();
             DataContext = model;
@@ -26,8 +26,11 @@ namespace Catalog_User_GUI
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            new User_Review_View().ShowDialog();
-            model.Refresh();
+            //if (model.Register_User_ViewModel())
+            //{
+                new User_Main_View().Show();
+                this.Close();
+            //}
         }
     }
 }

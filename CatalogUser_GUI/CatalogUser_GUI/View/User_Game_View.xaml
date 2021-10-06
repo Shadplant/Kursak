@@ -5,8 +5,43 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Catalog_User_GUI"
         mc:Ignorable="d"
-        Title="User_Game_View" Height="450" Width="800">
+        Title="User_Game_View" Height="850" Width="800"
+        TextElement.Foreground="White"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="20"
+        TextOptions.TextFormattingMode="Ideal"
+        TextOptions.TextRenderingMode="Auto"
+        Background="{DynamicResource MaterialDesignDarkBackground}"
+        FontFamily="{DynamicResource MaterialDesignFont}">
+
     <Grid>
+        <Image x:Name="Main_Image" Margin="400,10,0,0" Source="{Binding Pic_Url}" HorizontalAlignment="Left" Width="369" Height="193" VerticalAlignment="Top"/>
+        <TextBlock Text="Name:" Margin="40,30,0,0" HorizontalAlignment="Left" Width="76" Height="25" VerticalAlignment="Top"></TextBlock>
+        <TextBlock Text="Rating:" Margin="40,115,0,0" HorizontalAlignment="Left" Width="76" Height="25" VerticalAlignment="Top"></TextBlock>
+        <TextBlock Text="Description:" Margin="40,188,0,0" Height="25" VerticalAlignment="Top" HorizontalAlignment="Left" Width="115"></TextBlock>
+        <TextBlock Text="Game Link:" Margin="42,387,0,0" Height="25" VerticalAlignment="Top" HorizontalAlignment="Left" Width="116"/>
+
+        <TextBox x:Name="Name_Textbox" Margin="121,15,0,0" TextWrapping="Wrap" Style="{StaticResource MaterialDesignOutlinedTextBox}" Text="{Binding Name}" HorizontalAlignment="Left" Width="226" Height="55" VerticalAlignment="Top"/>
+        <TextBox x:Name="Description_Textbox" Margin="40,218,0,0" TextWrapping="Wrap" Style="{StaticResource MaterialDesignOutlinedTextBox}" Text="{Binding Description}" HorizontalAlignment="Left" Width="715" Height="156" VerticalAlignment="Top"/>
+        <TextBox x:Name="Rating_Textbox" Margin="121,100,0,0" TextWrapping="Wrap" Style="{StaticResource MaterialDesignOutlinedTextBox}" Text="{Binding Rating}" HorizontalAlignment="Left" Width="113" Height="55" VerticalAlignment="Top"/>
+        <TextBox x:Name="Rating_Textbox_Addition" Margin="234,100,0,0" TextWrapping="Wrap" Style="{StaticResource MaterialDesignOutlinedTextBox}" Text="/5" HorizontalAlignment="Left" Width="113" Height="55" VerticalAlignment="Top"/>
+        <TextBox x:Name="Game_Link_Textbox" Margin="0,417,0,0" TextWrapping="Wrap" Style="{StaticResource MaterialDesignOutlinedTextBox}"  HorizontalAlignment="Center" Width="716" Height="55" VerticalAlignment="Top"/>
+
+        <Button Margin="0,492,0,310" Content="Review" Click="Button_Click"></Button>
         
+        <ScrollViewer Margin="0,530,0,0">
+            <ListView x:Name="All_Item_Panel" ScrollViewer.HorizontalScrollBarVisibility="Disabled" ScrollViewer.VerticalScrollBarVisibility="Auto" ItemsSource="{Binding Reviews}">
+                <ListView.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <StackPanel/>
+                    </ItemsPanelTemplate>
+                </ListView.ItemsPanel>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </ScrollViewer>
+
     </Grid>
 </Window>
