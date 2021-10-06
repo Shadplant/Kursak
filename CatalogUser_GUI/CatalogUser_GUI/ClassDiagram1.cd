@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Catalog_User_GUI.User_Gamelist_ViewModel" Collapsed="true">
+    <Position X="6" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModel\User_Gamelist_ViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Catalog_User_GUI.User_Game_ViewModel" Collapsed="true">
+    <Position X="4.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAABgAAAAIQCAAAQAgQAEAAEAAAAAAAAIAAA=</HashCode>
+      <FileName>ViewModel\User_Game_ViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Catalog_User_GUI.User_Login_ViewModel" Collapsed="true">
+    <Position X="7.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>GAAAAAAAEAAAAAAAAAAAAAAAAAAAAAACEAAQAgAIEAA=</HashCode>
+      <FileName>ViewModel\User_Login_ViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Catalog_User_GUI.User_News_ViewModel" Collapsed="true">
+    <Position X="4.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModel\User_News_ViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Catalog_User_GUI.User_Profile_ViewModel" Collapsed="true">
+    <Position X="6" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModel\User_Profile_ViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Catalog_User_GUI.User_Register_ViewModel" Collapsed="true">
+    <Position X="7.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAADAAAAAgAAAAAAAAAAAAAAACAAAQAhAYEAA=</HashCode>
+      <FileName>ViewModel\User_Register_ViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Catalog_User_GUI.User_Review_ViewModel" Collapsed="true">
+    <Position X="6" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAAAAAAAAAAAAAQAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModel\User_Review_ViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Catalog_User_GUI.ServiceSingleton" Collapsed="true">
+    <Position X="3.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAgAAABIAAQABEAAYAAAAAA=</HashCode>
+      <FileName>Service\ServiceSingleton.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Catalog_User_GUI.Game" Collapsed="true">
+    <Position X="5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABQEAAAQAAAIAAAACACAAAAAgQAAAAEAAAQAAAAABAA=</HashCode>
+      <FileName>Objects\Class\Game.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Catalog_User_GUI.Review" Collapsed="true">
+    <Position X="7.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAgBAAAAABEAAAEAAAAAAAAAAAAAAQAAEQAAAA=</HashCode>
+      <FileName>Objects\Class\Review.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Catalog_User_GUI.User" Collapsed="true">
+    <Position X="9" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgACAAAAAgAAAAAAAAAAAAAAACAAAQAgAAEAA=</HashCode>
+      <FileName>Objects\Class\User.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Catalog_Admin_GUI.Game_Object" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="10.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAEAAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>Objects\Game_Object.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Catalog_User_GUI.Base_Model" Collapsed="true">
+    <Position X="8.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Base_Model.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Catalog_User_GUI.User_Gamelist_Model" Collapsed="true">
+    <Position X="5.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\User_Gamelist_Model.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Catalog_User_GUI.User_Game_Model" Collapsed="true">
+    <Position X="12.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\User_Game_Model.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Catalog_User_GUI.User_Login_Model" Collapsed="true">
+    <Position X="1.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAEAEAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\User_Login_Model.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Catalog_User_GUI.User_News_Model" Collapsed="true">
+    <Position X="8" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAA=</HashCode>
+      <FileName>Model\User_News_Model.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Catalog_User_GUI.User_Profile_Model" Collapsed="true">
+    <Position X="14.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAA=</HashCode>
+      <FileName>Model\User_Profile_Model.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Catalog_User_GUI.User_Register_Model" Collapsed="true">
+    <Position X="3.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\User_Register_Model.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Catalog_User_GUI.User_Review_Model" Collapsed="true">
+    <Position X="10.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\User_Review_Model.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Catalog_User_GUI.User_Gamelist_Control" Collapsed="true">
+    <Position X="12.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\User_Gamelist_Control.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Catalog_User_GUI.User_Game_View" Collapsed="true">
+    <Position X="10.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAIAAA=</HashCode>
+      <FileName>View\User_Game_View.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Catalog_User_GUI.User_Login_View" Collapsed="true">
+    <Position X="11.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAgAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAIAAA=</HashCode>
+      <FileName>View\User_Login_View.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Catalog_User_GUI.User_Main_View" Collapsed="true">
+    <Position X="13.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\User_Main_View.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Catalog_User_GUI.User_News_Control" Collapsed="true">
+    <Position X="6" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\User_News_Control.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Catalog_User_GUI.User_Profile_Control" Collapsed="true">
+    <Position X="7.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\User_Profile_Control.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Catalog_User_GUI.User_Register_View" Collapsed="true">
+    <Position X="9.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAIAAA=</HashCode>
+      <FileName>View\User_Register_View.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="Catalog_User_GUI.IServiceUser" Collapsed="true">
+    <Position X="3.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CABAAAAABBAAAAAAAAAAACAAAAAAAAAAQAAAAAgAAAA=</HashCode>
+      <FileName>Service\IServiceUser.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Catalog_Admin_GUI.Admin_Gamelist_Model" Collapsed="true">
+    <Position X="5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAAAAAAAAAAAAABAAAAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Admin_Gamelist_Model.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Catalog_Admin_GUI.Admin_Login_Model" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="10.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAAAIAgAAAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Admin_Login_Model.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Catalog_Admin_GUI.Admin_Refer_Model" Collapsed="true">
+    <Position X="11.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAgAAAAAAAAAEAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Admin_Refer_Model.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Catalog_Admin_GUI.Base_Model" Collapsed="true">
+    <Position X="10.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Base_Model.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Catalog_Admin_GUI.Game_Add_Model" Collapsed="true">
+    <Position X="14" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Game_Add_Model.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Catalog_Admin_GUI.Game" Collapsed="true">
+    <Position X="7.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABQEAAAQAAAIAAAACACAAAAAgQAAAAEAAAQAAAAABAA=</HashCode>
+      <FileName>Objects\Class\Game.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Catalog_Admin_GUI.Game_Object" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="9" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAEAAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>Objects\Game_Object.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Catalog_Admin_GUI.ServiceSingleton" Collapsed="true">
+    <Position X="12.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAgAAABIAAQABEAAYAAAAAA=</HashCode>
+      <FileName>Service\ServiceSingleton.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Catalog_Admin_GUI.Admin_Game_Add_Control" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="7.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\Admin_Game_Add_Control.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Catalog_Admin_GUI.Admin_Gamelist_Control" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="9" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\Admin_Gamelist_Control.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Catalog_Admin_GUI.Admin_Login_View" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="12.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAIAAA=</HashCode>
+      <FileName>View\Admin_Login_View.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Catalog_Admin_GUI.Admin_Main_View" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="9" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAEAIAAAQAAAAIAAAAAAAA=</HashCode>
+      <FileName>View\Admin_Main_View.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Catalog_Admin_GUI.Admin_Refer_Control" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="10.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAgAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\Admin_Refer_Control.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Catalog_Admin_GUI.Admin_Gamelist_ViewModel" Collapsed="true">
+    <Position X="16.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAIAAEAKAAAACAAAAAAAAAAAAAAAAAAAAAAEAAAIAAQ=</HashCode>
+      <FileName>ViewModel\Admin_Gamelist_ViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Catalog_Admin_GUI.Admin_Login_ViewModel" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="7.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAACAABAAgIAAAAAAAgAAAAAACEAEAAgAIAAA=</HashCode>
+      <FileName>ViewModel\Admin_Login_ViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Catalog_Admin_GUI.Admin_Refer_ViewModel" Collapsed="true">
+    <Position X="9.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAQBAAgEAAAAAAAAAAQAAACAAAACgAIAAA=</HashCode>
+      <FileName>ViewModel\Admin_Refer_ViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Catalog_Admin_GUI.Game_Add_ViewModel" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="7.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAEAAAAgAAAAIQCAIAQAgAAMAAAAAAAAAAAIAAA=</HashCode>
+      <FileName>ViewModel\Game_Add_ViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Catalog_Admin_GUI.RelayCommand" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="10.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAQAAEAEAABAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>RelayCommand.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Catalog_GUI.App" Collapsed="true">
+    <Position X="12.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>App.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Catalog_Admin_GUI.IService1" Collapsed="true">
+    <Position X="14.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AFAAAAAAAAAAAAAAAEAAAAAAAAAAEAAQQAAACAAQAAA=</HashCode>
+      <FileName>Service\IService1.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

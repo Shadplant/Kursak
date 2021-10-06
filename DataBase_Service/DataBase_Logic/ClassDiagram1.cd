@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="DataBase_Logic.Game" Collapsed="true">
+    <Position X="12" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABQEAAAQAAAIAAAACACAAAAAgQAAAAEAAAQAAAAABAA=</HashCode>
+      <FileName>Classes\Game.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataBase_Logic.News" Collapsed="true">
+    <Position X="10.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAgAAAAAAAAAAgAAAAIAAAAAAAAAAAAAEAgAA=</HashCode>
+      <FileName>Classes\News.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataBase_Logic.Review" Collapsed="true">
+    <Position X="12" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAgBAAAAABEAAAEAAAAAAAAAAAAAAQAAEQAAAA=</HashCode>
+      <FileName>Classes\Review.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataBase_Logic.User" Collapsed="true">
+    <Position X="8.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgACAAAAAgAAAAAAAAAAAAAAACAAAQAgAAEAA=</HashCode>
+      <FileName>Classes\User.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataBase_Logic.Admin_Reposetory" Collapsed="true">
+    <Position X="8.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAAAAEAAAAAAAAAAEAAAAAAAAAAQAAA=</HashCode>
+      <FileName>Repositories\Admin_Reposetory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataBase_Logic.Game_Reposetory" Collapsed="true">
+    <Position X="8.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQQAAACAAAAAA=</HashCode>
+      <FileName>Repositories\Game_Reposetory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataBase_Logic.User_Reposetory" Collapsed="true">
+    <Position X="10.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repositories\User_Reposetory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataBase_Logic.DatabaseConnectionSingleton" Collapsed="true">
+    <Position X="10.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAgACAAAAAAAAABAAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>DatabaseConnectionSingleton.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -4,7 +4,7 @@ using System.ServiceModel;
 namespace DataBase_Service
 {
     [ServiceContract]
-    public interface IService1
+    public interface IServiceAdmin
     {
         [OperationContract]
         void Add_Game(string serialized_game);

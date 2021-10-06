@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="DataBase_Service.ServiceAdmin" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="10" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AFAAAAAAAAAQAAAAAEAAAAAAAAAAEAAQQAAACAAQAAA=</HashCode>
+      <FileName>ServiceAdmin.svc.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DataBase_Service.ServiceUser" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="11.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CABAAAAABBAQAAAAAAAAACAAAAAAAAAAQAAAAAgAAAA=</HashCode>
+      <FileName>ServiceUser.svc.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Interface Name="DataBase_Service.IServiceAdmin" Collapsed="true">
+    <Position X="10" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AFAAAAAAAAAAAAAAAEAAAAAAAAAAEAAQQAAACAAQAAA=</HashCode>
+      <FileName>IServiceAdmin.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="DataBase_Service.IServiceUser" Collapsed="true">
+    <Position X="11.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CABAAAAABBAAAAAAAAAAACAAAAAAAAAAQAAAAAgAAAA=</HashCode>
+      <FileName>IServiceUser.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

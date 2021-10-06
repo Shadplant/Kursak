@@ -24,6 +24,22 @@ namespace DataBase_Logic
             }
         }
 
+        public string Get_Game(int id)
+        {
+            using (SqlConnection conn = new SqlConnection(DatabaseConnectionSingleton.getInstance().getConnectionString()))
+            {
+                return JsonConvert.SerializeObject(conn.Query<Game>("EXEC Get_Game " + id).FirstOrDefault());
+            }
+        }
+
+        public string Get_Reviews(int id)
+        {
+            using (SqlConnection conn = new SqlConnection(DatabaseConnectionSingleton.getInstance().getConnectionString()))
+            {
+                return JsonConvert.SerializeObject(conn.Query<Review>("EXEC Get_Reviews " + id).ToList());
+            }
+        }
+
         public void Edit_Game(Game game)
         {
             using (SqlConnection conn = new SqlConnection(DatabaseConnectionSingleton.getInstance().getConnectionString()))

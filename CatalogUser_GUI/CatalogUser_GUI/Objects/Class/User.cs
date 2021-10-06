@@ -1,6 +1,11 @@
-﻿namespace DataBase_Logic
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Text;
+
+namespace Catalog_User_GUI
 {
-    public class User
+    public class User : Base_Model
     {
         private int user_id;
         private string email;
@@ -13,6 +18,7 @@
             set
             {
                 user_id = value;
+                OnPropertyChanged("User_ID");
             }
         }
 
@@ -23,6 +29,7 @@
             set
             {
                 email = value;
+                OnPropertyChanged("Email");
             }
         }
 
@@ -32,6 +39,7 @@
             set
             {
                 login = value;
+                OnPropertyChanged("Login");
             }
         }
 
@@ -41,6 +49,7 @@
             set
             {
                 password = value;
+                OnPropertyChanged("Password");
             }
         }
     }
